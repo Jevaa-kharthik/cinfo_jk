@@ -16,34 +16,44 @@ cinfo_jk --numcpu
 ### To know the version of the package 
 ```
 cinfo_jk -v
-OR
+```
+### OR
+```
 cinfo_jk --version
 ```
 
 ### To know about the load in CPUs use
 ```
 cinfo_jk -l
-OR
+```
+### OR
+```
 cinfo_jlk --load
 ```
 
 ### To know about the Statistics of the CPU use
 ```
 cinfo_jk -t
-OR
+```
+### OR
+```
 cinfo_jk --stats
 ```
 
 ### To know about the Percentage of the CPUs
 ```
 cinfo_jk -c
-OR
+```
+### OR
+```
 cinfo_jk --cpu
 ```
 
 ### To know about the all the description about the CPUs and want the live Description about the CPUs use
 ```
 cinfo_jk -c -l -t -s
-OR
+```
+### OR
+```
 cinfo_jk --cpu --load --stats --stream
 ```
