@@ -1,0 +1,56 @@
+#! /usr/bin/python
+
+from ast import main
+from optparse import OptionParser
+import psutil
+parser = OptionParser()
+parser.add_option("-v", "--version",  
+                  dest="version", default=False, 
+                  action="store_true", help="Print the Version of the Package")
+parser.add_option("-n", "--numcpu",  
+                  dest="numcpu", default=False, 
+                  action="store_true", help="Print the number of CPUs")
+parser.add_option("-c", "--cpu",  
+                  dest="cpu", default=False,
+                  action="store_true", help="Prints the CPUs Percentage")
+parser.add_option("-l", "--load",  
+                  dest="loadavg", default=False,
+                  action="store_true", help="Prints the Load avg of the CPUs")
+parser.add_option("-s", "--stream",
+                  dest="stream", default=False,
+                  action="store_true", help="Prints the countinous value of the output")
+parser.add_option("-t", "--stats",
+                  dest="stats", default=False,
+                  action="store_true", help="Prints the stastical data of CPUs")
+
+def main():
+    (options, args) = parser.parse_args()
+    try:
+        if options.ensure_value('numcpu', False) == True:
+                print("Number of CPUs:", psutil.cpu_count())
+        if options.ensure_value('cpu', False):
+            if options.ensure_value('stream', False) == True:
+                while True:
+                    print("\rCPUs Percentage:", psutil.cpu_percent(1), "%", end="  "),
+            else:
+                print("CPUs Percentage:", psutil.cpu_percent(1), "%")
+        if options.ensure_value('loadavg', False):
+            if options.ensure_value('stream', False) == True:
+                while True:
+                    print("\rCPUs Percentage:", psutil.getloadavg(), end="  "),
+            else:
+                print("CPUs Load average :", psutil.getloadavg())
+        if options.ensure_value('stats', False):
+            if options.ensure_value('stream', False) == True:
+                while True:
+                    print("\rCPUs Statistical data", psutil.cpu_stats(), end="  "),
+            else:
+                print("CPUs Percentage:", psutil.cpu_stats())
+        if options.ensure_value('version', False):
+            print("The Version of cpuinfo is 0.1.0")
+    except KeyboardInterrupt: 
+        pass
+
+
+if __name__ == "__main__" :
+     main()
