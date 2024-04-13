@@ -2,60 +2,60 @@
 
 ### To download the cinfo_jk package you need to install python Version 3
 
-### After to install the package use 
+### After to install the package:
 ```
   pip install cinfo_jk
 ```
-### To know how many CPUs are in the processor 
+### To know how many CPUs are in the processor:
 ```
 cinfo_jk -n
 ```
-OR
+#### OR
 ```
 cinfo_jk --numcpu
 ```
 
-### To know the version of the package 
+### To know the version of the package:
 ```
 cinfo_jk -v
 ```
-### OR
+#### OR
 ```
 cinfo_jk --version
 ```
 
-### To know about the load in CPUs use
+### To know about the load in CPUs:
 ```
 cinfo_jk -l
 ```
-### OR
+#### OR
 ```
 cinfo_jlk --load
 ```
 
-### To know about the Statistics of the CPU use
+### To know about the Statistics of the CPU:
 ```
 cinfo_jk -t
 ```
-### OR
+#### OR
 ```
 cinfo_jk --stats
 ```
 
-### To know about the Percentage of the CPUs
+### To know about the Percentage of the CPUs:
 ```
 cinfo_jk -c
 ```
-### OR
+#### OR
 ```
 cinfo_jk --cpu
 ```
 
-### To know about the all the description about the CPUs and want the live Description about the CPUs use
+### To know about the all the description about the CPUs and want the live Description about the CPUs:
 ```
 cinfo_jk -c -l -t -s
 ```
-### OR
+#### OR
 ```
 cinfo_jk --cpu --load --stats --stream
 ```
