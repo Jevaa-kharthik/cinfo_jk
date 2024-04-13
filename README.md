@@ -9,7 +9,9 @@
 ### To know how many CPUs are in the processor 
 ```
 cinfo_jk -n
+```
 OR
+```
 cinfo_jk --numcpu
 ```
 
