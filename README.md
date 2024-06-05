@@ -10,7 +10,7 @@
 ```
 cinfo_jk -n
 ```
-#### OR
+**OR**
 ```
 cinfo_jk --numcpu
 ```
@@ -19,7 +19,7 @@ cinfo_jk --numcpu
 ```
 cinfo_jk -v
 ```
-#### OR
+**OR**
 ```
 cinfo_jk --version
 ```
@@ -28,7 +28,7 @@ cinfo_jk --version
 ```
 cinfo_jk -l
 ```
-#### OR
+**OR**
 ```
 cinfo_jlk --load
 ```
@@ -37,7 +37,7 @@ cinfo_jlk --load
 ```
 cinfo_jk -t
 ```
-#### OR
+**OR**
 ```
 cinfo_jk --stats
 ```
@@ -46,7 +46,7 @@ cinfo_jk --stats
 ```
 cinfo_jk -c
 ```
-#### OR
+**OR**
 ```
 cinfo_jk --cpu
 ```
